@@ -1,0 +1,19 @@
+In order to create this program there was a few goals I had to meet and a few challenges to solve. 
+
+Goal 1- Succesfully connect program to webpage to download text.
+ >How do I connect to the internet through my project? (Requires research)
+ >How do I filter out unwanted characters (Need to look at Regex options)
+ >How should I store it to properly prepare for the next step in the process?
+
+Goal 2- Count words in string
+ >What do I need to be able to count properly? (Most likely use a java object)
+ >How do I check if a word has already occurred? (Object combined with some kind of loop?)
+
+Goal 1 took some trail and error at first. The first section of the main code focus on creating a connection to the html page in order to download and store the text into 
+a string. This brought up the problem of needing to filter out the symbols and weird codes brought in from the download. Looking up and researching Regex was necessary to
+be successful in this part of the code. Having a large string is nice but I found it helpful to put each word into a section of an array as it is easier to work with.
+
+Goal 2 was complicated compared to the first goal. I used two arrays, one storing the words from the text and 1 storing objects that acted as words with numbers attached
+to them. This all came together but creating a new object in the array each time a new word appeared but if there was already a word with a corresponding object, I would 
+instead up the counter of the object instead of creating a new one. This worked out well and in the end all I had to do was sort the array with objects and
+pull the top 20.
